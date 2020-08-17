@@ -1,0 +1,53 @@
+.message {
+    position: relative;
+    width: 700px;
+    height: 150px;
+}
+
+.ava img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    box-shadow: 0 0 7px #00ffff;
+    bottom: 27%;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid darkcyan;
+    border-left: 20px solid transparent;
+    left: 10%;
+    bottom: 27%;
+}
+
+.item {
+    position: absolute;
+    width: 300px;
+    min-height: 70px;
+    padding: 9px 0px 0px 20px;
+    background-color: black;
+    border-radius: 15px 15px 15px 0px;
+    box-shadow: inset 0 0 5px cyan;
+    left: 11.5%;
+    bottom: 27%;
+}
+
+.name {
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, darkcyan, lightseagreen);
+}
+
+.messageText {
+    color: lightblue;
+}
+
+.time {
+    color: gray;
+    text-align: right;
+    margin-right: 2%;
+}
