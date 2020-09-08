@@ -1,0 +1,94 @@
+.menu, .menuActive {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: 1s;
+    font-size: 20px;
+}
+
+.menu {
+    transform: translateX(-100%);
+}
+
+.menuActive {
+    box-shadow: 10px 20px 20px cyan;
+    transform: translateX(0%);
+    transition: 1s, box-shadow 2s, text-shadow 2s;
+    text-shadow: 0 0 8px darkcyan, 0 0 20px darkcyan;
+}
+
+.checkbox {
+    display: none;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: -42px;
+    top: 15px;
+}
+
+.fake {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 2px solid cyan;
+    position: relative;
+    margin: 3px;
+    border-radius: 20%;
+    background-color: #303232;
+}
+
+.fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 25px;
+    height: 6px;
+    opacity: 1;
+    transition: 1s;
+    background-color: darkturquoise;
+    border-radius: 25%;
+}
+
+.checkbox:checked + .fake::before {
+    opacity: 1;
+    transform: rotate(135deg);
+    top: 36%;
+    left: 12%;
+}
+
+.nav {
+
+}
+
+.item a {
+    color: #1d1d1d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.item a.activeLink {
+    color: #a8f1ff;
+    transition: color 1s;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}

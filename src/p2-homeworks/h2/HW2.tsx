@@ -18,22 +18,26 @@ const defaultAffairs: Array<AffairType> = [
     {_id: 4, name: "work", priority: "high"},
     {_id: 5, name: "html & css", priority: "middle"},
 ];
-
-debugger
-export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): any => {
-
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => {
+ let result: Array<AffairType>
     if (filter === "all") {
-        return affairs
+        result = affairs
+        return result
     }
 
     if (filter === "high") {
-        return affairs.filter(a => a.priority === "high")
+        result = affairs.filter((a:AffairType) => a.priority === "high")
+        return result
     }
     if (filter === "middle") {
-        return affairs.filter(a => a.priority === "middle")
+        result = affairs.filter((a:AffairType) => a.priority === "middle")
+        return result
     }
     if (filter === "low") {
-        return affairs.filter(a => a.priority === "low")
+        result = affairs.filter((a:AffairType) => a.priority === "low")
+        return result
+    }else {
+        return affairs
     }
 
 }
@@ -51,15 +55,12 @@ function HW2() {
 
     return (
         <div>
-            <hr/>
             homeworks 2
-
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
             />
-            <hr/>
         </div>
     );
 }

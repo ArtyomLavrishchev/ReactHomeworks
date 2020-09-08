@@ -1,12 +1,27 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .superInput {
-
+    display: block;
+    border: 1px solid darkcyan;
+    background-color: lightblue;
+    border-radius: 5px;
+    height: 25px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    display: block;
+    box-shadow: inset 1px 1px 10px #e50707;
+    border: 1px solid #E50707;
+    background-color: lightblue;
+    border-radius: 5px;
+    height: 25px;
 }
 
 .error {
-    color: red;
+    color: #E50707;
+    height: 25px;
 }

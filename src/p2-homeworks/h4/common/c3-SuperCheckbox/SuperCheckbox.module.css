@@ -1,7 +1,47 @@
 .checkbox {
-
+    display: none;
 }
 
 .spanClassName {
 
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fake {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid cyan;
+    position: relative;
+    margin: 3px;
+    border-radius: 20%;
+    background-color: #303232;
+}
+
+.fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 6px;
+    height: 6px;
+    opacity: 0;
+    transition: .3s;
+    background-color: darkturquoise;
+    border-radius: 25%;
+}
+
+.checkbox:checked + .fake::before {
+    opacity: 1;
+}
+
+.text {
+    margin-left: 5px;
 }

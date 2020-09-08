@@ -10,18 +10,14 @@ const messageData = {
 
 function HW1() {
     return (
-        <div style={{color: "cyan"}}>
-            <hr/>
+        <div>
             homeworks 1
-
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
                 message={messageData.message}
                 time={messageData.time}
             />
-
-            <hr/>
         </div>
     );
 }

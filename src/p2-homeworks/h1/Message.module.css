@@ -1,39 +1,35 @@
 .message {
-    position: relative;
-    width: 700px;
-    height: 150px;
+    width: 300px;
     margin: 1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .ava img {
-    position: absolute;
     width: 70px;
     height: 70px;
     border-radius: 100px;
     box-shadow: 0 0 7px #00ffff;
-    bottom: 27%;
+    margin-right: 5px;
 }
 
 .triangle {
-    position: absolute;
+
     width: 0;
     height: 0;
     border-bottom: 13px solid darkcyan;
     border-left: 20px solid transparent;
-    left: 10%;
-    bottom: 27%;
 }
 
 .item {
-    position: absolute;
-    width: 300px;
+
+    width: 210px;
     min-height: 70px;
     padding: 9px 0px 0px 20px;
     background-color: black;
-    border-radius: 15px 15px 15px 0px;
+    border-radius: 15px 15px 15px 0;
     box-shadow: inset 0 0 5px cyan;
-    left: 11.5%;
-    bottom: 27%;
 }
 
 .name {

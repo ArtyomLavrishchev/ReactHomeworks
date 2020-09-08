@@ -6,22 +6,21 @@ import SuperCheckbox from "./common/c3-SuperCheckbox/SuperCheckbox";
 
 function HW4() {
     const [text, setText] = useState<string>("");
+    const [error, setError] = useState<string>("")
     const showAlert = () => {
+        text ? setError("") : setError("error")
         if (error) {
             alert("введите текст...");
         } else {
             alert(text); // если нет ошибки показать текст
         }
     }
-    const error = text ? "" : "error";
+
     const [checked, setChecked] = useState<boolean>(false);
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
-
     return (
         <div>
-            <hr/>
             homeworks 4
-
             <div className={s.column}>
                 {/*should work (должно работать)*/}
                 <SuperInputText
@@ -29,7 +28,8 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // className={s.blue} // проверьте, рабоет ли смешивание классов
+                    setError={setError}
+                    className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
 
                 {/*should work (должно работать)*/}
@@ -51,13 +51,6 @@ function HW4() {
                 {/*// onChange тоже должен работать*/}
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperInputText/>*/}
-            {/*<AlternativeSuperButton/>*/}
-            {/*<AlternativeSuperCheckbox/>*/}
-            <hr/>
         </div>
     );
 }
