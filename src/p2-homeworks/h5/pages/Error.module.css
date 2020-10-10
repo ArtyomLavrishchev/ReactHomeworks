@@ -1,0 +1,10 @@
+.err {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    height: 100vh;
+    color: #800909;
+    text-shadow: 0 0 8px darkcyan, 0 0 20px darkcyan;
+}
