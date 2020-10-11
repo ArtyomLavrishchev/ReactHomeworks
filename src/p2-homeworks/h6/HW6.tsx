@@ -18,8 +18,6 @@ function HW6() {
     return (
         <div>
             homeworks 6
-
-            {/*should work (должно работать)*/}
             <div className={s.span}>
                 <div>
                     <SuperEditableSpan
