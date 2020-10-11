@@ -1,4 +1,5 @@
 .App {
     background: linear-gradient(black, #013b3b) fixed;
     color: cyan;
+    height: 1200px;
 }

@@ -1,0 +1,33 @@
+.select {
+    position: relative;
+}
+.select select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    background: darkcyan;
+    border: 1px solid black;
+    border-radius: 3px;
+    appearance: none;
+    font-size: 1rem;
+    color: black;
+    box-shadow:  0 0 7px #017e7e;
+    font-weight: bold;
+}
+.select select:focus {
+    outline: none;
+    box-shadow: 0 0 10px white;
+}
+.select:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: black transparent transparent transparent;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    z-index: 1;
+    margin-top: -3px;
+}
