@@ -1,15 +1,11 @@
-.checkbox {
-    display: none;
+.radio {
+    position: absolute;
+    opacity: 0;
 }
 
-.spanClassName {
-
-}
-
-.label {
+.item {
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .fake {
@@ -19,30 +15,40 @@
     border: 2px solid cyan;
     position: relative;
     margin: 3px;
-    border-radius: 20%;
     background-color: #303232;
+    border-radius: 50%;
 }
+
 
 .fake::before {
     padding: 3px;
     content: "";
     position: absolute;
-    top: 10%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 3px;
+    height: 3px;
     opacity: 0;
     transition: .3s;
-    border-radius: 25%;
-    background-image: url("../../../../assets/images/2checkmark.png");
+    background-color: darkturquoise;
+    border-radius: 50%;
 }
 
-.checkbox:checked + .fake::before {
+.radio:checked + .fake::before {
     opacity: 1;
 }
 
+.radio:checked + .fake {
+    box-shadow: 0 0 10px white;
+}
+
 .text {
-    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 2px;
+    font-weight: bold;
+    font-size: large;
+
 }
