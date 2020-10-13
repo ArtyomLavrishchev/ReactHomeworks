@@ -35,10 +35,7 @@ function Clock() {
                  onMouseEnter={onMouseEnter}
                  onMouseLeave={onMouseLeave}
             >
-                <div>
                     <span>{stringTime}</span>
-                </div>
-
                 {show && (
                     <div>
                         {stringDate}
