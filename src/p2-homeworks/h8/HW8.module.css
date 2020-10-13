@@ -1,8 +1,6 @@
 .item {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: #000000;
     position: relative;
     color: darkcyan;
@@ -12,4 +10,15 @@
     border-radius: 15px;
     margin: 1em;
     height: 100%;
+}
+
+.peoples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
 }

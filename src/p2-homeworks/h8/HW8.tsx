@@ -23,8 +23,8 @@ function HW8() {
     const [people, setPeople] = useState(initialPeople);
 
     const finalPeople = people.map((p: PeopleType) => (
-        <div key={p._id}>
-            <span>{p.name}</span><span>{p.age}</span>
+        <div key={p._id}  className={s.peoples}>
+            <span>{p.name}</span><span>{`-${p.age}`}</span>
         </div>
     ))
 
@@ -36,10 +36,8 @@ function HW8() {
         <div>
             homeworks 8
             <div className={s.item}>
-                <div>
                     {finalPeople}
-                </div>
-                <div>
+                <div className={s.buttons}>
                     <SuperButton onClick={sortUp}>sort up</SuperButton>
                     <SuperButton onClick={sortDown}>sort down</SuperButton>
                     <SuperButton onClick={checkAge}>check age</SuperButton>
