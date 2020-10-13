@@ -11,8 +11,6 @@ function HW7() {
     return (
         <div>
             homeworks 7
-
-            {/*should work (должно работать)*/}
             <div className={s.item}>
                 <div>
                     <SuperSelect

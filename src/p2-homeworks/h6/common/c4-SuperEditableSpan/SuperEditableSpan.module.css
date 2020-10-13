@@ -5,7 +5,7 @@
     text-shadow: -2px 1px 8px rgba(74,134,206,0.87);
 }
 .editableSpan:hover {
-    transition: 0.5s;
+    transition: 1s;
     text-shadow: 0 0 8px darkcyan, 0 0 20px darkcyan;
     color: #01aeae;
     cursor: url("../../../../assets/images/pencil.png"),auto;
