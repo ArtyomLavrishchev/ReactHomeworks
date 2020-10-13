@@ -31,11 +31,11 @@ function Clock() {
 
     return (
         <div>
-            <div className={s.date}>
-                <div
-                    onMouseEnter={onMouseEnter}
-                    onMouseLeave={onMouseLeave}
-                >
+            <div className={s.date}
+                 onMouseEnter={onMouseEnter}
+                 onMouseLeave={onMouseLeave}
+            >
+                <div>
                     <span>{stringTime}</span>
                 </div>
 
