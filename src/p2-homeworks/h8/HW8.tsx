@@ -24,7 +24,7 @@ function HW8() {
 
     const finalPeople = people.map((p: PeopleType) => (
         <div key={p._id}  className={s.peoples}>
-            <span>{p.name}</span><span>{`-${p.age}`}</span>
+            <span>{p.name}</span><span>{p.age}</span>
         </div>
     ))
 

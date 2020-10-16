@@ -1,7 +1,6 @@
 import React, {ChangeEvent, useState} from "react";
 import Greeting from "./Greeting";
 import {UserType} from "./HW3";
-import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type GreetingContainerPropsType = {
     users: Array<UserType>
@@ -32,13 +31,13 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     return (
         <div>
-        <Greeting
-            name={name}
-            setNameCallback={setNameCallback}
-            addUser={addUser}
-            error={error}
-            totalUsers={totalUsers}
-        />
+            <Greeting
+                name={name}
+                setNameCallback={setNameCallback}
+                addUser={addUser}
+                error={error}
+                totalUsers={totalUsers}
+            />
 
         </div>
     );
